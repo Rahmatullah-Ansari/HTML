@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            text-align: center;
+            padding: 3px;
+            color: rgb(8, 8, 8);
+            border: 1px double black;
+            font-size: medium;
+        }
+        table{
+            background-color: rgb(4, 181, 252);
+            border: 6px double rgb(252, 5, 5);
+            border-radius: 20px;
+        }
+        #th1{
+            border-radius:15px 0 0 0;
+        }
+        #th2{
+            border-radius:0 15px 0 0;
+        }
+        #th3{
+            border-radius:0 0 0 15px;
+        }
+        #th4{
+            border-radius:0 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 align="center">B.E 6th Semester Exam Schedule</h1>
+   <table cellspacing="1">
+       <tr>
+           <th id="th1">S.NO</th>
+           <th>DATE</th>
+           <th>SUBJECT</th>
+           <th id="th2">TIME</th>
+       </tr>
+       <tr>
+           <td>01.</td>
+           <td>03-08-2021</td>
+           <td>CN</td>
+           <td rowspan="6">10:00 AM<br>TO<br>01:00 PM</td>
+       </tr>
+       <tr>
+        <td>02.</td>
+        <td>05-08-2021</td>
+        <td>CD</td>
+       </tr>
+       <tr>
+        <td>03.</td>
+        <td>07-08-2021</td>
+        <td>ERP</td>
+       </tr><tr>
+        <td>04.</td>
+        <td>09-08-2021</td>
+        <td>SEPM</td>
+       </tr><tr>
+        <td>05.</td>
+        <td>11-08-2021</td>
+        <td>CG</td>
+       </tr><tr>
+        <td>06.</td>
+        <td>13-08-2021</td>
+        <td>MIS</td>
+       </tr>
+       <tr>
+           <th colspan="4">Subject Details</th>
+       </tr>
+       <tr>
+           <th colspan="2">S.NO.</th>
+           <th colspan="2">NAME</th>
+       </tr>
+       <tr>
+           <td colspan="2">01.</td>
+           <td colspan="2">CN-Computer Network</td>
+       </tr>
+       <tr>
+           <td colspan="2">02.</td>
+           <td colspan="2">CD-Compiler Design</td>
+       </tr>
+       <tr>
+        <td colspan="2">03.</td>
+        <td colspan="2">ERP-Enterprise Resource Planning</td>
+    </tr>
+    <tr>
+        <td colspan="2">04.</td>
+        <td colspan="2">SEPM-Software Engineering & Project Management</td>
+    </tr>
+    <tr>
+        <td colspan="2">05.</td>
+        <td colspan="2">CG-Computer Graphics</td>
+    </tr>
+    <tr>
+        <td colspan="2" id="th3">06.</td>
+        <td colspan="2" id="th4">MIS-Management Information System</td>
+    </tr>
+   </table>
+   </center> 
+</body>
+</html>
