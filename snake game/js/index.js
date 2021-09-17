@@ -120,6 +120,30 @@ snake_array[0].y +=inputDir.y;
     foodElement.classList.add('snake_food');
     board.appendChild(foodElement);
 }
+btnLeft.addEventListener('click',()=>{
+    inputDir.x=-1;
+    inputDir.y=0;
+    key_prees += 1;
+    attempt.innerHTML = "Attempt to eat : "+key_prees;
+});
+btnRight.addEventListener('click',()=>{
+    inputDir.x=1;
+    inputDir.y=0;
+    key_prees += 1;
+    attempt.innerHTML = "Attempt to eat : "+key_prees;
+});
+btnUp.addEventListener('click',()=>{
+    inputDir.x=0;
+    inputDir.y=-1;
+    key_prees += 1;
+    attempt.innerHTML = "Attempt to eat : "+key_prees;
+});
+btnDown.addEventListener('click',()=>{
+    inputDir.x=0;
+    inputDir.y=1;
+    key_prees += 1;
+    attempt.innerHTML = "Attempt to eat : "+key_prees;
+});
 //main logic starts here
 window.requestAnimationFrame(main);
 window.addEventListener('keydown',e=>{
@@ -130,25 +154,21 @@ window.addEventListener('keydown',e=>{
     //},150);
     switch (e.key) {
         case "ArrowUp":
-            console.log("ArrowUp");
             inputDir.x=0;
             inputDir.y=-1;
             key_prees += 1;
             break;
         case "ArrowDown":
-            console.log("ArrowDown");
             inputDir.x=0;
             inputDir.y=1;
             key_prees += 1;
             break;
         case "ArrowLeft":
-            console.log("ArrowLeft");
             inputDir.x=-1;
             inputDir.y=0;
             key_prees += 1;
             break;
         case "ArrowRight":
-            console.log("ArrowRight");
             inputDir.x=1;
             inputDir.y=0;
             key_prees += 1;
