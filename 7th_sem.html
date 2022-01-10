@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,
+        td {
+            text-align: center;
+            padding: 3px;
+            color: white;
+            border: 1px double lime;
+            font-size: medium;
+        }
+        
+        table {
+            background-color: rgb(19, 16, 16);
+            border-left: 6px solid lime;
+            border-right: 6px solid lime;
+            border-top: 6px double lime;
+            border-bottom: 6px double lime;
+            border-radius: 20px;
+            word-spacing: 2px;
+            letter-spacing: 2px;
+        }
+        
+        #th1 {
+            border-radius: 15px 0 0 0;
+        }
+        
+        #th2 {
+            border-radius: 0 15px 0 0;
+        }
+        
+        #th3 {
+            border-radius: 0 0 0 15px;
+        }
+        
+        #th4 {
+            border-radius: 0 0 15px 0;
+        }
+        
+        h1 {
+            color: white;
+            text-decoration: underline overline;
+        }
+        
+        body {
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 align="center">B.E 7th Semester Exam Schedule</h1>
+        <table cellspacing="2">
+            <tr>
+                <th id="th1">S.NO</th>
+                <th>DATE</th>
+                <th>SUBJECT</th>
+                <th id="th2">TIME</th>
+            </tr>
+            <tr>
+                <td>01.</td>
+                <td>20-01-2022</td>
+                <td>MCA - 322731(33)</td>
+                <td rowspan="5">10:00 AM<br>TO<br>01:00 PM</td>
+            </tr>
+            <tr>
+                <td>02.</td>
+                <td>22-01-2022</td>
+                <td>PPC - 322732(22)</td>
+            </tr>
+            <tr>
+                <td>03.</td>
+                <td>24-01-2022</td>
+                <td>NP - 322733(22)</td>
+            </tr>
+            <tr>
+                <td>04.</td>
+                <td>25-01-2022</td>
+                <td>CNS - 322734(22)</td>
+            </tr>
+            <tr>
+                <td>05.</td>
+                <td>27-01-2022</td>
+                <td>E-COM - 322743(22)</td>
+            </tr>
+            <tr>
+                <th colspan="4">Subject Details</th>
+            </tr>
+            <tr>
+                <th colspan="2">S.NO.</th>
+                <th colspan="2">NAME</th>
+            </tr>
+            <tr>
+                <td colspan="2">01.</td>
+                <td colspan="2">MCA - Mobile Computing & Application</td>
+            </tr>
+            <tr>
+                <td colspan="2">02.</td>
+                <td colspan="2">PPC - Parallel Processor & Computing</td>
+            </tr>
+            <tr>
+                <td colspan="2">03.</td>
+                <td colspan="2">NP - Network Programming</td>
+            </tr>
+            <tr>
+                <td colspan="2">04.</td>
+                <td colspan="2">CNS - Cryptography & Network Security</td>
+            </tr>
+            <tr>
+                <td colspan="2" id="th3">05.</td>
+                <td colspan="2" id="th4">E-COM - E-Commerce & Strategic IT</td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
